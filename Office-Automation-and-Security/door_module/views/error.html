@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="author" content="Shubham Kumar">
+	<title>Error</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		[class*="col-"] {
+			float: left;
+			padding: 15px;
+		}
+		.col-1 {width: 5%; height: 100%;}
+		.col-2 {width: 16.66%; height: 100%;}
+		.col-3 {width: 75%; height: 100%;}
+
+		html {
+			font-family: "Lucida Sans", sans-serif;			
+		}
+		body{
+			background-color: #d4d4d4;
+			color: black;
+			margin:0;
+		}
+		.header {
+			background-color: black;
+			color:#d4d4d4;
+			padding:15px 15px 15px 40px;
+			height:120px;
+			border-bottom:5px solid #33b5e5;
+		}
+		.header h1:hover{
+			color:black;
+		}
+		.footer {
+			bottom:0px;
+			position: fixed;
+			background-color: #33b5e5;
+			color:black;
+			height: 80px;
+			padding: 15px 0 5px 0;
+			text-align: center; 
+			border-top:5px solid black;
+			width: 100%;
+			font-family: 'trebuchet ms', sans-serif;	
+		}
+		.col-2 ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.col-2 button[type=button] {
+			width: 150px;
+			padding: 8px;
+			margin-bottom: 7px;
+			background-color: #33b5e5;
+			color: #ffffff;
+			font-weight: bold;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			border-radius: 8px;
+		}
+		.col-2 button[type=button]:hover {
+			background-color: #ffffff;
+			color:#33b5e5;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="header">
+			<center><h1 style="margin-bottom:0px;"> Office Automation and Security </h1></center>
+		</div>
+
+	<div class="row">
+		
+		<div class="col-1">
+		</div>
+		
+		<div class="col-2">
+			<br><br><br><br>
+			<ul>
+				<li><button type="button" onclick="location.href='/register' " target="_blank">Home</button></li>
+				<li><button type="button" onclick="location.href='/rfidstatus' " target="_blank">Rfid Status</button></li>
+				<li><button type="button" onclick="location.href='/availability' " target="_blank">Check Avialability</button></li>
+				<li><button type="button" onclick="location.href='http://ip_address:6500' " target="_blank">Intruders</button></li>
+			</ul>
+		</div>
+		
+		<div class="col-1">
+		</div>
+		
+		<div class="col-3">
+			<br><br><br><br>
+			<center>
+				<h2>Something went wrong...Please try again.</h2>
+			</center>
+		</div>
+
+	</div>
+	
+	<div class="footer">
+		<p><b>Developed By Shubham Kumar</b></p>
+	</div>
+	
+</body>
+</html>

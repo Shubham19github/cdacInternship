@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="author" content="Shubham Kumar">
+
+		<title>Office Automation and Security</title>
+		
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+			[class*="col-"] {
+				float: left;
+				padding: 15px;
+			}
+			.col-1 {width: 5%; height: 100%;}
+			.col-2 {width: 10%; height: 100%;}
+			.col-3 {width: 40%; height: 100%;}
+			.col-4 {width: 35%; height: 100%;}
+
+			html {
+				font-family: "Lucida Sans", sans-serif;			
+			}
+			body{
+				background-color: #d4d4d4;
+				color: black;
+				margin:0;
+			}
+			.header {
+				background-color: black;
+				color:#d4d4d4;
+				padding:15px 15px 15px 40px;
+				height:120px;
+				border-bottom:5px solid #33b5e5;
+			}
+			input[type=submit] {
+				padding: 8px;
+				background-color: #33b5e5;
+				color: #ffffff;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				width: 100px;
+				font-weight: bold;
+				border-radius: 8px;
+			}
+			input[type=submit]:hover {
+				background-color: #ffffff;
+				color:#33b5e5;
+			}
+			.header h1:hover{
+				color:black;
+			}
+			.footer {
+				bottom:0px;
+				position: fixed;
+				background-color: #33b5e5;
+				color:black;
+				height: 80px;
+				padding: 15px 0 5px 0;
+				text-align: center; 
+				border-top:5px solid black;
+				width: 100%;
+				font-family: 'trebuchet ms', sans-serif;	
+			}
+			input[type=text] ,input[type=password]{
+				width: 100%;
+				padding: 10px 15px;
+				margin: 8px 0;
+				border:none;
+				height:35px;
+				border-radius: 6px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+			}
+		</style>
+	</head>
+	
+	<body>
+
+		<div class="header">
+			<center><h1 style="margin-bottom:0px;"> Office Automation and Security </h1></center>
+		</div>
+
+		<div class="row">
+			<br><br>
+			<div class="col-1">
+			</div>
+
+			<div class="col-3">
+			  <center>
+				<br><br><br><br>
+				<h1>Welcome Admin</h1>
+				<h2>Enter your Credentials</h2>
+			  </center>
+			</div>
+
+			<div class="col-2">
+			</div>
+			
+			<div class="col-4">	
+					<br><br><br>
+					<form method="post" action="/register" >
+						User name<br>
+					  <input type="text" name="username"><br><br>
+					  
+					  Password<br>
+					  <input type="password" name="password"><br><br>
+					<input type="submit" value="Login">
+					</form>
+			</div>
+
+		</div>
+		
+		<div class="footer">
+			<p><b>Developed By Shubham Kumar</b></p>
+		</div>
+
+	</body>
+	
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "door_module",
+  "version": "1.0.0",
+  "description": "raspberry pi running at door",
+  "main": "rfid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "door"
+  ],
+  "author": "Shubham Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "consolidate": "^0.14.5",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.3",
+    "mqtt": "^2.9.1",
+    "nodemon": "^1.11.0",
+    "onoff": "^1.1.4",
+    "path": "^0.12.7",
+    "pigpio": "^0.6.1",
+    "serialport": "^5.0.0-beta8",
+    "swig": "^1.4.2"
+  }
+}
